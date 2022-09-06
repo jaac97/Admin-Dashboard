@@ -1,0 +1,14 @@
+@use 'variables' as v;
+
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+@mixin  grid ($columns, $gap){
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}

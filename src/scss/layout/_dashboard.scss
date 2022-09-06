@@ -1,0 +1,12 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+.root{
+    display: grid;
+    grid-template-columns: 1fr;
+    @include m.desktop {
+        grid-template-columns: 30rem 1fr;
+    }
+}
+.sidebar{
+
+}
