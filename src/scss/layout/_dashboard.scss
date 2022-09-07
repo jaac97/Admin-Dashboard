@@ -1,12 +1,17 @@
 @use '../base/variables' as v;
 @use '../base/mixins' as m;
-.root{
+
+body{
+    font-family: v.$family;
+}
+.root {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 5rem;
+
     @include m.desktop {
         grid-template-columns: 30rem 1fr;
-    }
-}
-.sidebar{
+        gap: 3rem;
 
+    }
 }
