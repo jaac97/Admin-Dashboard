@@ -17,7 +17,7 @@
     @include m.desktop {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fill, 20rem);
+        grid-template-rows: repeat(3,20rem);
         gap: 2rem;
 
     }
