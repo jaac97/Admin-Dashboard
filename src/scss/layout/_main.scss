@@ -1,0 +1,116 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.content {
+    grid-column: 2/3;
+    background-color: v.$white;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    gap: 2rem;
+}
+.content__heading{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.grid__content__projects {
+    @include m.desktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, 20rem);
+        gap: 2rem;
+
+    }
+}
+.grid__item {
+    border-left: 5px solid v.$secodaryBG;
+    overflow: hidden;
+    border-radius: .5rem;
+    background-color: v.$purewhite;
+    padding: 2rem 4rem 2rem 2rem;
+    position: relative;
+    box-shadow:  2px 2px 2px 1px v.$shadow;
+}
+.grid__title{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+}
+.grid__text{
+    margin-top: 0;
+    color: #8b8b8b;
+    font-size: 1.4rem;
+
+}
+.grid__item__options{
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+.content__trending {
+    @include m.desktop {
+        grid-area: 2/2;
+    }
+}
+
+.grid__item__options{
+    text-align: right;
+}
+.anouncements{
+    background-color: v.$purewhite;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow:  2px 2px 2px 1px v.$shadow;
+
+}
+.anouncement{
+    border-bottom: 2px solid v.$shadow;
+}
+.anouncement:last-of-type{
+    border-bottom: none;
+}
+.anouncement__heading{
+    font-size: 1.4rem;
+}
+.anouncement__text{
+    font-size: 1.4rem;
+    color: #8b8b8b;
+}
+.trendings{
+    background-color: v.$purewhite;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow:  2px 2px 2px 1px v.$shadow;
+
+}
+.trending {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.trending__img{
+    padding: 1rem;
+    border-radius: 50%;
+}
+.trending__img--one{
+    background-color: v.$secondary;
+}
+.trending__img--two{
+    background-color: v.$primaryBG;
+}
+.trending__img--three{
+    background-color: #8b8b8b;
+}
+.trending__img--four{
+    background-color: v.$primary;
+}
+.trending__nick{
+    margin: 0;
+}
+.trending__subtitle{
+    color: #8b8b8b;
+    margin: 0;
+}
