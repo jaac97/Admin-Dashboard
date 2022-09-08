@@ -11,7 +11,7 @@ body{
 
     @include m.desktop {
         grid-template-columns: 30rem 1fr;
-        gap: 3rem;
+        gap: unset;
 
     }
 }
